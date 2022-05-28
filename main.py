@@ -9,17 +9,33 @@
 # Add_track: Add a new item to students tracks, should accept a new track as an argument.
 # get_score: Return student’s score.
 
+from unicodedata import name
+
 class Student:
     # [assignment] Skeleton class. Add your code here
-    def __init__(self):
-        pass
+    def __init__(self, name, age, tracks, scores):
+        self.Student_s_name = name
+        self.Student_s_age = age
+        self.Student_s_tracks = tracks
+        self.Student_s_scores = scores
+
+student = Student()
+student.name = "Anita"
+student.age = "32"
+student.tracks = ["FE", "BE"]
+student.float = "20.20"
+print(student.name)
+
+# changing methods
+student.change_name("Amarachi")
+print(student.name)
 
 
 
-Bob = Student(name="Bob", age=26, tracks=["FE","BE"],score=20.90)
+# Bob = Student(name="Bob", age=26, tracks=["FE","BE"],score=20.90)
 
-# Expected methods
-Bob.change_name("Peter")
-Bob.change_age(34)
-Bob.add_track("UI/UX")
-Bob.get_score()
+# # Expected methods
+# Bob.change_name("Peter")
+# Bob.change_age(34)
+# Bob.add_track("UI/UX")
+# Bob.get_score()
