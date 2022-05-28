@@ -8,34 +8,40 @@
 # Change_age: Change students' age, should accept a new age as an argument. Should ensure age remains an integer.
 # Add_track: Add a new item to students tracks, should accept a new track as an argument.
 # get_score: Return student’s score.
-
 from unicodedata import name
 
+
 class Student:
+
     # [assignment] Skeleton class. Add your code here
-    def __init__(self, name, age, tracks, scores):
-        self.Student_s_name = name
-        self.Student_s_age = age
-        self.Student_s_tracks = tracks
-        self.Student_s_scores = scores
 
-student = Student()
-student.name = "Anita"
-student.age = "32"
-student.tracks = ["FE", "BE"]
-student.float = "20.20"
-print(student.name)
+    def __init__(self, name, age, track, score):
+        self.student_name = name
+        self.student_age = age
+        self.student_track = track
+        self.student_score = score
 
-# changing methods
-student.change_name("Amarachi")
-print(student.name)
+Anita = Student('name', 'age', 'track', 'score')
+Amarachi = Student('name', 'age', 'track', 'score')
+Anita.name = "Anita"
+Anita.age = 32
+Anita.track = ["FE", "BE"]
+Anita.score = 20.50
 
+Amarachi.name = "Amarachi"
+Amarachi.age = 36
+Amarachi.track = ["UI/UX", "FE"]
+Amarachi.score = 50.20
+print(Amarachi.name)
+print(Anita.age)
 
-
-# Bob = Student(name="Bob", age=26, tracks=["FE","BE"],score=20.90)
-
-# # Expected methods
-# Bob.change_name("Peter")
-# Bob.change_age(34)
-# Bob.add_track("UI/UX")
-# Bob.get_score()
+# methods
+def change_name(self, name):
+        self.change_name = name
+def change_age(self, age):
+        self.change_age = age
+def add_track(self, track):
+        self.self.append(track)
+def get_score(self,score):
+    self.get_score(score)
+print(Amarachi)
