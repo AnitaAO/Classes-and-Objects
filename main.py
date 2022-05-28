@@ -16,6 +16,7 @@ class Student:
     # [assignment] Skeleton class. Add your code here
 
     def __init__(self, name, age, track, score):
+
         self.student_name = name
         self.student_age = age
         self.student_track = track
@@ -37,11 +38,16 @@ print(Anita.age)
 
 # methods
 def change_name(self, name):
-        self.change_name = name
+    self.change_name = name
+    print(Anita, self.name)
+
 def change_age(self, age):
-        self.change_age = age
+    self.change_age = age
+    print(32, self.age)
+
 def add_track(self, track):
-        self.self.append(track)
-def get_score(self,score):
-    self.get_score(score)
-print(Amarachi)
+    self.self.append(track)
+    print("BE", self.track)
+
+def get_score(self):
+    print(f"The score remains {self.score}")
